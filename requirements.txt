@@ -8,5 +8,6 @@ pytest==9.0.2
 python-dotenv==1.2.1
 SQLAlchemy==2.0.47
 uvicorn==0.40.0
+psycopg2-binary
 
 # Supported runtime: Python 3.10.10
