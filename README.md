@@ -141,7 +141,7 @@ Copy `.env.example` to `.env` and set real local values. Never commit `.env`.
 At minimum configure:
 
 ```text
-DATABASE_URL=postgresql+psycopg://USER:PASSWORD@localhost:5433/DATABASE
+DATABASE_URL=postgresql+psycopg://USER:PASSWORD@localhost:5432/DATABASE
 GOOGLE_API_KEY=your-key
 GEMINI_MODEL=gemini-3.5-flash-lite
 SUPPORT_APPROVER_TOKEN=local-secret
@@ -152,7 +152,7 @@ example, an `@` in a password must be represented as `%40`.
 
 ## PostgreSQL
 
-The included Compose file starts PostgreSQL with the host port `5433`:
+The included Compose file starts PostgreSQL with the host port `5432`:
 
 ```powershell
 docker compose up -d postgres
@@ -286,21 +286,7 @@ git diff --check
 - Add a real billing-provider adapter behind an explicit execution boundary.
 - Add broader evaluation cases and a managed deployment configuration.
 
-## Ownership and attribution
 
-Maintainer: `@sowjanyavangala1`
-
-This working tree originated from
-[Byusa/Enterprise-Agentic-Support](https://github.com/Byusa/Enterprise-Agentic-Support)
-and contains substantial modifications, including the Gemini integration,
-persistence workflow, approval handling, browser console, test coverage, and
-documentation updates. The upstream GitHub repository did not publish a
-license file or a license declaration at the time of review. This README does
-not grant redistribution rights.
-
-Before publishing a derivative repository, obtain permission from the original
-author or otherwise resolve the applicable copyright and licensing position.
-Do not add a license file until those rights are clear.
 
 ## License
 
