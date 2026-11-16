@@ -1,7 +1,7 @@
 services:
   postgres:
     image: pgvector/pgvector:pg16
-    container_name: srize-postgres
+    container_name: supportmindai-postgres
     restart: unless-stopped
     environment:
       POSTGRES_DB: ${POSTGRES_DB:?Set POSTGRES_DB in .env}

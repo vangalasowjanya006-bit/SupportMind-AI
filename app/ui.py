@@ -6,7 +6,7 @@ UI_PAGE = """<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Srize Support Console</title>
+  <title>SupportMindAI Support Console</title>
   <style>
     :root {
       color-scheme: dark;
@@ -124,7 +124,7 @@ UI_PAGE = """<!doctype html>
       <div class="brand">
         <div class="brand-mark">S</div>
         <div>
-        <div class="brand-name">SRIZE · AGENTIC SUPPORT</div>
+        <div class="brand-name">SUPPORTMINDAI · AGENTIC SUPPORT</div>
         <h1>Support console</h1>
         <p class="subtitle">Investigate customer issues, review recommendations, and approve safe actions.</p>
         </div>
@@ -187,12 +187,12 @@ UI_PAGE = """<!doctype html>
     function setTheme(theme) {
       document.documentElement.dataset.theme = theme;
       themeToggle.textContent = theme === "light" ? "☾ Dark" : "☀ Light";
-      localStorage.setItem("srize-theme", theme);
+      localStorage.setItem("supportmindai-theme", theme);
     }
     function toggleTheme() {
       setTheme(document.documentElement.dataset.theme === "light" ? "dark" : "light");
     }
-    setTheme(localStorage.getItem("srize-theme") || "dark");
+    setTheme(localStorage.getItem("supportmindai-theme") || "dark");
     function show(target, value) { target.textContent = typeof value === "string" ? value : String(value); }
     function statusClass(value) {
       if (["resolved", "approved"].includes(value)) return "success";

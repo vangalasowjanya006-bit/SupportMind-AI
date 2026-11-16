@@ -34,7 +34,7 @@ async def lifespan(_: FastAPI) -> AsyncGenerator[None, None]:
 
 
 app = FastAPI(
-    title="Srize Agentic Support",
+    title="SupportMindAI",
     version="0.1.0",
     lifespan=lifespan,
 )

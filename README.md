@@ -1,6 +1,6 @@
-# Srize Agentic Support
+# SupportMindAI
 
-Srize Agentic Support is a FastAPI application that analyzes customer-support
+SupportMindAI is a FastAPI application that analyzes customer-support
 requests, retrieves customer and transaction information from PostgreSQL,
 recommends a resolution with Google Gemini, and persists the resulting support
 case and audit events.
@@ -97,7 +97,7 @@ of being executed.
 ## Project structure
 
 ```text
-Enterprise-Agentic-Support/
+SupportMindAI/
 ├── app/
 │   ├── database.py       # SQLAlchemy engine and session lifecycle
 │   ├── graph.py          # LangGraph workflow and deterministic checks
